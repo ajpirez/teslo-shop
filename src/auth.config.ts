@@ -47,7 +47,6 @@ export const authConfig: NextAuthConfig = {
             return session
         }
     },
-    // secret: 'nojj6abB5Zv2wFn85hy9F+FkEFMUO1yKHUepWsXDXoU=',
     providers: [
         Credentials({
             async authorize(credentials) {

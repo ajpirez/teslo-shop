@@ -33,7 +33,6 @@ export const Sidebar = () => {
 
     return (
         <div onClick={() => closeMenu()}>
-
             {
                 isSideMenuOpen && (
                     <>
@@ -43,7 +42,6 @@ export const Sidebar = () => {
                         <div className="fade-in fixed top-0 left-0 w-screen h-screen z-10 backdrop-filter backdrop-blur-sm"/>
                     </>
                 )
-
             }
 
             {/*Sidemanu*/}
@@ -51,7 +49,7 @@ export const Sidebar = () => {
                 //TODO efecto de slide
                  className={
                      clsx(
-                         "fixed p-5 right-0 top-0 w-[500px] h-screen bg-white z-20 shadow-2xl transform transition-all duration-300 overflow-scroll",
+                         "fixed p-5 right-0 top-0 w-[500px] h-screen bg-white z-20 shadow-2xl transform transition-all duration-300 ",
                          {
                              'translate-x-full': !isSideMenuOpen
                          }
